@@ -130,13 +130,7 @@ int main()
                     minorScales[x][y] = "G#";
                 break;                   
             }
-        }
-    }
-
-    // assigning the scales major, minor, or diminshed chords based on the degree
-    for(int x = 0; x < 12; x++) {
-        for(int y = 0; y < 7; y++) {
-            switch(y) { // MAJOR
+            switch(y) { // Major
                 case 0:
                 case 3:
                 case 4:
@@ -175,7 +169,7 @@ int main()
 
     // creating an array based on the chords
     cout << "Enter the chords one at a time. Indicate whether the chord is major, minor, or diminshed..." << endl;
-    cout << "\tFor example E minor would be entered like EMinon, EMajor, EDiminsihed" << endl;
+    cout << "\tFor example E minor would be entered like EMinon, EMajor, EDim" << endl;
     cout << "You must enter more than two chords to get an accurate Key" << endl;
     
     int counter = 0;
